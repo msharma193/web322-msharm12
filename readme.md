@@ -9,5 +9,5 @@ Student Email : msharma193@myseneca.ca
 Course/Section: WEB322ZBB
 
 ## Project URLs
-GitHub Repo   : https://github.com/msharma193/web322-msharma193.git
+GitHub Repo   : https://github.com/msharma193/web322-msharm12.git
 Cyclic URL    : https://joyous-dove-waistcoat.cyclic.app
