@@ -1,0 +1,33 @@
+<div class="sign-up">
+    <div id="form">
+        <center><h1>Sign Up</h1></center>
+        <p>Create your account by entering your email address <br>and choosing a password</p>
+
+        <form action="/sign-up" method="POST" id="sign">
+      <div>
+        <input type="text" name="fname" id="fname" placeholder="First Name" value={{fname}} >
+        <br>
+        {{#if fnameMsg}}
+          <p class="errorMsg" >{{fnameMsg}}</p>
+        {{/if}}
+        <input type="text" name="lname" id="lname" placeholder="Last Name"  value={{lname}}>
+
+        <br>
+        {{#if lnameMsg}}
+          <p class="errorMsg">{{lnameMsg}}</p>
+        {{/if}}
+        <input type="text" name="email" id="email" placeholder="Email Address"value={{email}}>
+        <br>
+        {{#if emailMsg}}
+          <p class="errorMsg">{{emailMsg}}</p>
+        {{/if}}
+        <input type="password" name="password" id="password" placeholder="Password" value={{password}}>
+        <br>
+        {{#if passwordMsg}}
+          <p class="errorMsg">{{passwordMsg}}</p>
+        {{/if}}
+        <input type="submit" value="Sign up today" />
+      </div>
+    </form>
+    </div>
+</div>

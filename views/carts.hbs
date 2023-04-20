@@ -1,0 +1,76 @@
+  <h1>Shopping Cart Example</h1>
+
+    {{#if message}}
+        <h3 style="color: red;">{{message}}</h3>
+    {{/if}}
+
+    <h2>User Details</h2>
+    <dl>
+        <dt>Logged In?</dt>
+        {{#if user}}
+            <dd>Yes</dd>
+        {{else}}
+            <dd>No</dd>
+        {{/if}}
+    </dl>
+
+    <h2>Shopping Cart</h2>
+    <dl>
+        <dt>Cart Empty?</dt>
+        {{#if hasSongs}}
+            <dd>No</dd>
+        {{else}}
+            <dd>Yes</dd>
+        {{/if}}
+
+        <dt>Cart Amount</dt>
+        <dd>{{cartTotal}}</dd>
+    </dl>
+
+    {{#if hasSongs}}
+        <table border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <th>Headline</th>
+                <th>NumSleeps</th>
+                <th>NumBedrooms</th>
+                <th>NumBathrooms</th>
+                <th>pricePerNight</th>
+                <th>City</th>
+                <th>Province</th>
+                <th>Image</th>
+               
+            </tr>
+
+            {{#each songs}}
+                <tr>
+                    <td>{{song.headline}}</td>
+                    <td>{{song.numSleeps}}</td>
+                    <td>{{song.numBedrooms}}</td>
+                    <td>{{song.numBathrooms}}</td>
+                    <td>{{song.pricePerNight}}</td>
+                    <td>{{song.city}}</td>
+                    <td>{{song.province}}</td>
+                    <td><img src={{song.imageUrl}} alt="rental"></td>
+                  
+                </tr>
+            {{/each}}
+        </table>
+    {{/if}}
+
+    <h2>Actions</h2>
+    <div>
+        <button type="button" onclick="window.location.href='/add-rental/1'">Add Rental 1</button>
+        <button type="button" onclick="window.location.href='/add-rental/2'">Add Rental 2</button>
+        <button type="button" onclick="window.location.href='/add-rental/3'">Add Rental 3</button>
+        <button type="button" onclick="window.location.href='/add-rental/4'">Add Rental 4</button><br/>
+        <button type="button" onclick="window.location.href='/add-rental/5'">Add Rental 5</button><br/>
+        <button type="button" onclick="window.location.href='/add-rental/6'">Add Rental 6</button><br/>
+        <br/>
+
+        <button type="button" onclick="window.location.href='/remove-rental/1'">Remove rental 1</button>
+        <button type="button" onclick="window.location.href='/remove-rental/2'">Remove rental 2</button>
+        <button type="button" onclick="window.location.href='/remove-rental/3'">Remove rental 3</button>
+        <button type="button" onclick="window.location.href='/remove-rental/4'">Remove rental 4</button>
+        <button type="button" onclick="window.location.href='/remove-rental/5'">Remove rental 5</button>
+        <button type="button" onclick="window.location.href='/remove-rental/6'">Remove rental 6</button>
+    </div>        

@@ -1,0 +1,22 @@
+ <div class="container">
+      {{message}}
+      {{#each rentals}}
+            <section class="rental-section">
+                  <center><b><p id="cityp">{{cityProvince}}</p></b></center>
+                  <div class="rentals-grid">
+                  {{#each rentals}}
+                  <div class="rental-card">
+                    
+                        {{>rental this}}
+                        </div>
+          {{#if isCustomer}}             
+        <form action="/cart/add" method="post">
+            <input type="hidden" name="rentalId" value="{{_id}}">
+            <button type="submit">Rent</button>
+        </form>
+{{/if}}
+                  {{/each}}
+                  </div>
+            </section>
+      {{/each}}
+ </div>

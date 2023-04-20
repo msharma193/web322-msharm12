@@ -1,0 +1,27 @@
+<center><p class="greet">Greeting Data Clerk</p></center>
+
+{{!-- <div class="rental">
+    <img src={{imageUrl}} alt="rental">
+    <h2>{{headline}}</h2>
+
+    <p>Sleeps {{numSleeps}} . {{numBedrooms}} BR . {{numBathrooms}} BA &nbsp;<b>C${{pricePerNight}}</b></p>
+    <ul>
+        <li><a href="/rentals/add">Add Data</a></li>
+        <li><a href="/rentals/edit/:id">Edit Data</a></li>
+        <li><a href="/rentals/remove/:id">Remove Data</a></li>
+    </ul>  
+    
+</div>     --}}
+<div class="rentals">
+   <a id="add" href="/rentals/add">Add Rentals</a>
+    {{#each rentals}}
+        <div class="rental-card">
+            {{>rental this}}
+        </div>
+        <ul>
+            
+            <li><a href="/rentals/edit/{{this._id}}">Edit Data</a></li>
+            <li><a href="/rentals/remove/{{this._id}}">Remove Data</a></li>
+        </ul>  
+    {{/each}}
+    </div>

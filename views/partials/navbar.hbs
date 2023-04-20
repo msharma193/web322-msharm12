@@ -1,0 +1,20 @@
+<header>
+        <div class="nav">
+            <div class="left">
+                <img src="/images/l2.jpg" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/rentals">RENTALS</a></li>
+                    {{#if user}}
+                        <li id="fame">{{user.fname}}</li>
+                        <li><a href="/logout">LOG OUT</a></li>
+                    {{else}}
+                    <li><a href="/sign-up">SIGN UP</a></li>
+                    <li><a href="/log-in">LOG IN</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+</header>

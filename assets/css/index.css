@@ -1,0 +1,620 @@
+/* header styling */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+header{
+   height: 100px;
+   background-color: #f6f6f6;
+}
+header .nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 110px;
+}
+.left{
+    width: 30%;
+}
+.left img{
+    width: 250px;
+    height: 95px;
+    border-radius: 50%;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+.right{
+    width:70%;
+   
+}
+.right ul{
+    display: flex;
+    justify-content: center;
+    
+}
+.right ul li{
+    list-style-type: none;
+    margin: 20px;
+
+}
+.right ul li a{
+    text-decoration: none;
+    font-size: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #388087;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.right ul li a:hover{
+    /* background-color: rgb(224, 224, 224); */
+    background-color: #C2EDCE;
+    transition: .3s;
+    border-radius: 20px;
+}
+
+/* home styling */
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 8em;
+	justify-content: center;
+	height:600px;
+	align-items: center;
+	/*height: 200px;*/
+	position: relative;
+}
+#home::before{
+	content: "";
+	background: url('/images/apartment.jpg');
+    /* background-color: aquamarine; */
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0.89;
+	z-index: -1;
+}
+#home h1{
+	color: black;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+}
+#home p{
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 200;
+	font-family: 'Bree Serif', serif;
+}
+#home .btn{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    background: none;
+    font-size: 400;
+}
+#home .btn:hover{
+    box-shadow: 0px 0px 20px #388087;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: .3s;
+    /* font-size: 24px; */
+}
+
+/* Contnet Styling */
+#content{
+    /* background-color: #C2EDCE; */
+     font-family: 'Poppins', sans-serif;
+}
+#content .feature{
+    display: flex;
+    justify-content: center;
+    
+}
+.plan{
+    background-color: #BADFE7;
+}
+.content1, .content2,.content3{
+    margin: 10px;
+    padding: 10px;
+}
+.content1 h2, .content2 h2,.content3 h2{
+    padding: 10px;
+}
+.content1 p, .content2 p,.content3 p{
+    padding: 10px;
+}
+
+#home .h-primary{
+    font-family: 'Poppins', sans-serif;
+    font-size: 70px;
+}
+#home p{
+    font-family: 'Poppins', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+}
+
+/* Apartments section */
+#apartments{
+    background-color: #C2EDCE;
+}
+#apartments img{
+    width: 300px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 50%;
+   
+}
+.house p{
+    padding-left: 10px;
+    margin-left:10px ;
+    font-family: 'Poppins', sans-serif;
+}
+.house{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.a1{
+    margin-bottom: 20px;
+}
+/* end styling */
+footer{
+    background-color: #f6f6f6;
+}
+.end{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 20px; */ /* margin-top: 20px; */
+}
+#feature{
+    padding: 20px;
+    margin: 20px;
+    
+}
+#feature p{
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 26px;
+     padding-bottom: 20px;
+}
+#feature ul{
+    list-style-type: disc;
+    font-size: 26px;
+}
+#feature ul li{
+    font-size: 26px;
+     font-family: 'Ubuntu', sans-serif;
+     color: #4a6065;
+}
+
+.email p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 34px;
+    color: #388087;
+    padding: 30px;
+}
+.email form label{
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 24px;
+}
+.email form input{
+    margin-left: 20px;
+    padding: 10px;
+    background: none;
+    border: 2px solid black;
+    transition: .3s;
+}
+
+.email form input:hover{
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #388087;
+}
+form{
+    margin-left: 16px;
+}
+::placeholder{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.copyright{
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
+     margin: 20px;
+     padding-left: 20px;
+
+
+}
+.icon{
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+.icon i:hover{
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.icon i{
+    font-size: 20px;
+    padding: 6px;
+}
+/* Sign-up page */
+
+.sign-up{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    
+}
+.sign-up h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+}
+.sign-up p{
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 26px;
+    margin: 8px;
+
+}
+#sign input[type="text"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+    
+}
+#sign input[type="email"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+}
+#sign input[type="password"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+}
+#sign input[type="submit"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+    background-color: rgb(255, 220, 220);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+#sign input[type="submit"]:hover{
+    box-shadow: 0px 0px 20px brown;
+    transition: .3s;
+}
+#sign{
+    display: flex;
+    justify-content: center;
+}
+.sign-up #form{
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+}
+
+/* login page styling */
+.login{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    
+}
+.login h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    margin: 20px;
+}
+#log input[type="email"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+}
+#log input[type="password"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+}
+#log input[type="submit"]{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 4px;
+    background-color: rgb(255, 220, 220);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+#log input[type="submit"]:hover{
+    box-shadow: 0px 0px 20px brown;
+    transition: .3s;
+}
+.login #form{
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+/* rental styling */
+.rental img{
+    width: 100px;
+}
+
+.rental{
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+#cityp{
+    font-family: 'Poppins', sans-serif;
+    font-size: 38px;
+    display: block;
+    margin: 20px;
+}
+
+
+
+/* rentals styling container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .rental-section {
+    margin-top: 40px;
+  }
+  
+  .rentals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .rental-card {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .rental-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .rental-card h3 {
+    margin: 10px;
+  }
+  
+  .rental-card p {
+    margin: 10px;
+  }
+  
+  .rental-card a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .rental-card a:hover {
+    background-color: #0069d9;
+  }
+  
+  @media (max-width:1018px) and (min-width:890px){
+    .nav .right ul li a{
+        font-size: 24px;
+        
+    }
+    #feature ul li{
+        font-size: 22px;
+    }
+    .email p{
+        font-size: 24px;
+    }
+    .sign-up p{
+        font-size: 22px;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .feature p{
+        font-size: 16px;
+    }
+  }
+  @media (max-width:700px) and (min-width:550px){
+    #feature ul li{
+        font-size: 20px;
+    }
+    .icon i{
+        font-size: 12px;
+    }
+    .feature p{
+        font-size: 14px;
+    }
+  }
+  @media (max-width:377px) and (min-width:300px){
+    #feature ul li{
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .icon i{
+        font-size: 10px;
+    }
+    .feature p{
+        font-size: 6px;
+    }
+  }
+  @media (max-width: 600px) and (min-width: 100px){
+    .icon i{
+        font-size: 8px;
+    }
+    #feature ul li{
+        font-size: 16px;
+    }
+    .email p {
+        font-size: 13px;
+    }
+    #feature ul li{
+        font-size: 13px;
+    }
+    #feature {
+        padding: 20px;
+        margin: 20px;
+        width: 50%;
+    }
+    .email{
+        width: 50%;
+    }
+  }
+  @media (max-width:500px) and (min-width:200px) {
+    .icon i {
+        font-size: 8px;
+        padding: 6px;
+    }
+    .rental h2{
+        font-size: 26px;
+    }
+    .rental p{
+        font-size: 20px;
+    }
+  }
+
+  .errorMsg{
+    color: red;
+    font-family: 'Poppins', sans-serif;
+}
+  .wpage{
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    margin:26px;
+  }
+  .wpage img{
+    width: 800px;
+    height: 500px;
+  }
+  .form-check{
+    padding: 10px;
+    font-family:'Poppins', sans-serif ;
+    font-size: 18px;
+  }
+  input[type="radio"]:hover{
+    cursor: pointer;
+  }
+
+  .greet{
+    font-size: 33px;
+    margin: 20px;
+    font-family:'Poppins', sans-serif ;
+  }
+  #fame{
+    font-size: 30px;
+    font-family:'Poppins', sans-serif ;
+    color: #388087;
+    font-weight: bold;
+  }
+  /* Add margin and padding to the container */
+.container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  /* Style the heading */
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the form inputs and labels */
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    width: 100%;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0062cc;
+  }
+  
+  .rental-card img{
+    width: 300px;
+    height: 300px;
+  }
+  #add{
+    font-size: 24px;
+    text-decoration: none;
+    font-family:'Poppins', sans-serif ;
+    margin-right: 40px;
+  }

@@ -1,0 +1,18 @@
+<div class="rental">
+    <img src={{imageUrl}} alt="rental">
+    <h2>{{headline}}</h2>
+
+    <p>Sleeps {{numSleeps}} . {{numBedrooms}} BR . {{numBathrooms}} BA &nbsp;<b>C${{pricePerNight}}</b></p>
+
+
+    
+       
+
+        <form action="/cart/add" method="post">
+            <input type="hidden" name="rentalId" value="{{_id}}">
+            <button type="submit">Rent</button>
+        </form>
+
+
+
+</div>    
